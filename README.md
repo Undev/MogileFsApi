@@ -4,12 +4,14 @@ Author: Hugo Hallqvist <hugo@twingly.com>
 
 License
 =======
-Copyright 2010 Twingly AB. MogileFsApi is provided under the three-clause
+
+Copyright 2010-2011 Twingly AB. MogileFsApi is provided under the three-clause
 BSD License. See the included LICENSE.txt file for specifics.
 
 Examples
 ========
 
+```c#
 // Create a simple client against the server mogile1
 var uri = new Uri("mogile://mogile1:6001");
 var client = new MogileFsClient(new Uri[] { uri });
@@ -24,3 +26,5 @@ using (var filestream = new FileStream(@"C:\tmp\some_file.jpg", FileMode.Open)) 
 
 // Retrieve a file
 byte[] arr = client.GetFileBytes(d, key, 10000);
+```
+
